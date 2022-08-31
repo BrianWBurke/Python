@@ -7,18 +7,22 @@ print('*')
 print('/')
 
 op = input('Escolha uma das opções acima: ')
-x = int(input('Digite um valor inteiro: '))
-y = int(input('Digite outro valor inteiro: '))
+
+if op == '+' or op == '-' or op == '*' or op == '/':
+    x = int(input('Digite um valor inteiro: '))
+    y = int(input('Digite outro valor inteiro: '))
 
 if(op == '+'):
     res = x + y
+    print(f'{x} {op} {y} = {res}')
 elif(op == '-'):
     res = x - y
+    print(f'{x} {op} {y} = {res}')
 elif(op == '*'):
     res = x * y
+    print(f'{x} {op} {y} = {res}')
 elif(op == '/'):
     res = x / y
+    print(f'{x} {op} {y} = {res}')
 else:
     print('operação inválida, escreva um dos operadores acima')
-
-print(f'{x} {op} {y} = {res}')
