@@ -7,7 +7,7 @@ z = float(input('Insira a terceira nota: '))
 
 notaF = (x + y + z) / 3
 
-print(f'Nota 1: {x:.2} | Nota 2: {y:.2} | Nota 3: {z:.2} | Nota Final: {notaF:.2}')
+print(f'Nota 1: {x} | Nota 2: {y} | Nota 3: {z} | Nota Final: {notaF}')
 
 if (notaF >= 7):
     print('Aluno aprovado!')
