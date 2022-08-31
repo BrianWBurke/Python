@@ -12,12 +12,12 @@ else:
 
 if (fruta == 1):
     total = qnt * 2.3
-    print(f'Você comprou {fruta} maça(s). Total à pagar: R$ {total:.2f}')
+    print(f'Você comprou {qnt} maça(s). Total à pagar: R$ {total:.2f}')
 else:
     if (fruta == 2):
         total = qnt * 3.6
-        print(f'Você comprou {fruta} laranja(s). Total à pagar: R$ {total:.2f}')
+        print(f'Você comprou {qnt} laranja(s). Total à pagar: R$ {total:.2f}')
     else:
         if (fruta == 3):
             total = qnt * 1.85
-            print(f'Você comprou {fruta} banana(s). Total à pagar: R$ {total:.2f}')
+            print(f'Você comprou {qnt} banana(s). Total à pagar: R$ {total:.2f}')
