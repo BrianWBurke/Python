@@ -1,9 +1,18 @@
-# Alterando valor:
-notas = [9, 7, 7, 10, 3, 9, 6, 6, 2]
+cadastro = {'nome':[], 'sexo':[], 'ano':[]}
 
-print(notas)
+while True:
+    terminar = input('Deseja cadastrar uma pessoa? (S/N): ')
+    if terminar.upper() in 'N':
+        break
+    if terminar.upper() not in 'S':
+        print('Digite S para sim ou N para NÂO')
+        continue
 
-notas[-1] = 4
+    nome = input('Qual seu nome?')
+    sexo = input('Qual seu sexo (M/F)?')
+    ano = int(input('Qual seu ano de nascimento?'))
+    cadastro['nome'].append(nome)
+    cadastro['sexo'].append(sexo.upper())
+    cadastro['ano'].append(ano)
 
-print(notas)
-print(notas[-1])
+print(cadastro)    
