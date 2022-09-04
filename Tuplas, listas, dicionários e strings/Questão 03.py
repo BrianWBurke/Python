@@ -1,4 +1,4 @@
-#Confirmação e calculo do valor por volume da feijoada
+#Confirmação e cálculo do valor por volume da feijoada
 def volumeFeijoada(pergunta):
     try:
         x = int(input(pergunta))
@@ -12,7 +12,7 @@ def volumeFeijoada(pergunta):
         print('Houve algum erro, por favor tente novamente.')
         return True
 
-#Confirmação e calculo do valor da opção de feijoada
+#Confirmação e cálculo do valor da opção de feijoada
 def opcaoFeijoada(pergunta):
     valor = 0
     while True:
@@ -30,7 +30,7 @@ def opcaoFeijoada(pergunta):
             print('Você não digitou uma opção válida. Tente novamente')
             continue
 
-#Confirmação e calculo do valor por acompanhamento da feijoada
+#Confirmação e cálculo do valor por acompanhamento da feijoada
 def acompanhamentoFeijoada(pergunta):
     valor = 0
     while True:
@@ -60,7 +60,7 @@ def acompanhamentoFeijoada(pergunta):
 
 
 #Programa principal
-print('Bem vindo ao Lar da Feijoada do Brian Willian Burke')
+print('Bem-vindo ao Lar da Feijoada do Brian Willian Burke')
 
 #laço de repetição do programa principal
 while True:
@@ -73,8 +73,8 @@ while True:
     #Opção da feijoada
     opcao = opcaoFeijoada('-------MENU OPÇÃO FEIJOADA------- \n'
                           'b - Básica (feijão + paiol + costelinha) \n'
-                          'p - Básica (feijão + paiol + costelinha + partes de porco) \n'
-                          's - Básica (feijão + paiol + costelinha + partes de porco + charque + calabresa + bacon) \n'
+                          'p - Premium (feijão + paiol + costelinha + partes de porco) \n'
+                          's - Suprema (feijão + paiol + costelinha + partes de porco + charque + calabresa + bacon) \n'
                           '>>  ')
 
     #Adicionais da feijoada
@@ -86,7 +86,7 @@ while True:
                                         '4 - 1 laranja descascada\n'
                                         '>> ')
 
-    #Calculo do valor final
+    #Cálculo do valor final
     total = (volume * opcao) + adicionais
 
     #Mostrando para o usuário os valores separados e o valor final da compra
